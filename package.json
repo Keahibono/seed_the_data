@@ -1,0 +1,27 @@
+{
+  "name": "seed_the_data",
+  "version": "1.0.0",
+  "description": "- [Faker](https://github.com/marak/Faker.js/) (*optional*) - [Sequelize](http://sequelize.readthedocs.org/en/latest/) - [Express](http://www.expressjs.com/)",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.1",
+    "pg": "^4.4.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Keahibono/seed_the_data.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Keahibono/seed_the_data/issues"
+  },
+  "homepage": "https://github.com/Keahibono/seed_the_data#readme"
+}
