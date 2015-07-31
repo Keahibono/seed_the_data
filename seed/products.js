@@ -1,5 +1,6 @@
 var models = require('../models');
-var Products = models.products;
+var Products = models.Products;
+var Inventories = models.Inventories;
 
 models.sequelize
 .sync({ force: true})
