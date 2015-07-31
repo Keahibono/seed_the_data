@@ -1,6 +1,6 @@
 var models = require('../models');
 var Products = models.Products;
-var Inventories = models.Inventories;
+var Inventory = models.Inventory;
 
 models.sequelize
 .sync({ force: true})
@@ -25,6 +25,26 @@ models.sequelize
       name: "Snickers",
       description: "Snickers is a brand name chocolate bar made by Mars, Incorporated. Consisting of nougat topped with caramel and peanuts, enrobed in milk chocolate.",
       price: 0.75
+    }
+  ])
+})
+.then(function(){
+  Inventory.bulkCreate([
+    {
+      quantity: 75,
+      product_id: 1
+    },
+    {
+      quantity: 999999,
+      product_id: 2
+    },
+    {
+      quantity: 1875,
+      product_id: 3
+    },
+    {
+      quantity: 48,
+      product_id: 4
     }
   ])
 });
